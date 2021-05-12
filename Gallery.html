@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<title>Gallery</title>
+	<link rel="stylesheet" href="css/Galstyle.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class="nav">
+	<a class="a" href="Home.html">HOME</a>
+	<a class="b" href="AboutMe.html">ABOUT ME</a>
+	<a class="c" href="Gallery.html">GALLERY</a>
+	<a class="d" href="Contact.html">CONTACT ME</a>
+	<a class="e" href="Education.html">EDUCATION</a>
+	<a class="f" href="MPW.html">MY PROJECT/WORKS</a>
+	</div>	
+
+
+	<style>
+
+		a {
+		height: 90px;
+		width: 90px;
+		margin: 0 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		background-color: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+		border-radius: 50%;
+		border: 1px solid rgba(214, 202, 214, 0.72);
+		box-shadow: 8px 8px 12px -2px rgb(187, 192, 196),
+		-5px -5px 9px -2px rgb(173, 177, 177);
+		transition: transform 1s;
+	}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			width: 100%;
+			height: 100vh;
+			color: #fff;
+			background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB, #432371, #0061ff);
+			background-size: 400% 400%;
+			position: relative;
+			animation: change 10s ease-in-out infinite;
+		}
+		@keyframes change {
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+	}
+	</style>
+
+	<input type="radio" name="photos" id="cj1" checked>
+	<input type="radio" name="photos" id="cj2">
+	<input type="radio" name="photos" id="cj3">
+	<input type="radio" name="photos" id="cj4">
+
+<div class="PhoCon">
+	<h1>My Photo Gallery</h1>
+	<div class="TopCon">
+		<h3>My Photos</h3>
+		<label for="cj1">All photos</label>
+		<label for="cj2">Family Photos</label>
+		<label for="cj3">Child Photos</label>
+		<label for="cj4">Friends photos</label>
+</div>
+	<div class="PhoGal">
+		<div class="P Friends">
+			<img src="images/Gal/Friend1.jpg" width="400" height="300">
+		</div>
+		<div class="P Family">
+			<img src="images/Gal/Family1.jpg" width="400" height="300">
+		</div>
+		<div class="P Child">
+			<img src="images/Gal/Child1.jpg" width="400" height="300">
+		</div>
+		<div class="P Friends">
+			<img src="images/Gal/Friend2.jpg" width="400" height="300">
+		</div>
+		<div class="P Family">
+			<img src="images/Gal/Family2.jpg" width="400" height="300">
+		</div>
+		<div class="P Child">
+			<img src="images/Gal/Child2.jpg" width="400" height="300">
+		</div>
+		<div class="P Friends">
+			<img src="images/Gal/Friend3.jpg" width="400" height="300">
+		</div>
+		<div class="P Family">
+			<img src="images/Gal/Family3.jpg" width="400" height="300">
+		</div>
+		<div class="P Child">
+			<img src="images/Gal/Child3.jpg" width="400" height="300">
+		</div>
+		<div class="P Friends">
+			<img src="images/Gal/Friend4.jpg" width="400" height="300">
+		</div>
+		<div class="P Family">
+			<img src="images/Gal/Family4.jpg" width="400" height="300">
+		</div>
+		<div class="P Child">
+			<img src="images/Gal/Child4.jpg" width="400" height="300">
+		</div>
+		<div class="P Friends">
+			<img src="images/Gal/Friend5.jpg" width="400" height="300">
+		</div>
+		<div class="P Family">
+			<img src="images/Gal/Family5.jpg" width="400" height="300">
+		</div>
+		<div class="P Child">
+			<img src="images/Gal/Child5.jpg" width="400" height="300">
+		</div>
+		<div class="P Friends">
+			<img src="images/Gal/Friend6.jpg" width="400" height="300">
+		</div>
+		<div class="P Family">
+			<img src="images/Gal/Family6.jpg" width="400" height="300">
+		</div>
+		<div class="P Child">
+			<img src="images/Gal/Child6.jpg" width="400" height="300">
+		</div>
+		<div class="P Friends">
+			<img src="images/Gal/Friend7.jpg" width="400" height="300">
+		</div>
+		<div class="P Friends">
+			<img src="images/Gal/Friend8.jpg" width="400" height="300">
+		</div>
+</div>
+	</div>
+
+</body>
+</html>
