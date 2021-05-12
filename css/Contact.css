@@ -1,0 +1,59 @@
+.nav{
+	width: 350px;
+	height: auto;
+	position: fixed;
+}
+.nav a{
+	text-decoration: none;
+	font-size: 28px;
+	font-family: Verdana;
+	font-weight: bold;
+	height: 95px;
+	margin: 30px 0;
+	float: left;
+	display: inline-block;
+	background-color: white;
+	color: black;
+	line-height: 50px;
+	text-align: center; 
+	transition: 300ms; 
+	border-radius: 30px;
+}
+
+a.active, .nav a:hover{
+	background-color: #C0C0C0;
+	color: black;
+	width: 100%;
+}
+.a{
+	width: 95%;
+}
+.b{
+	width: 95%;
+}
+.c{
+	width: 95%;
+}
+.d{
+	width: 95%;
+}
+.e{
+	width: 95%;
+}
+.f{
+	width: 95%;
+}
+
+.info p{
+	  	text-align: center;
+	  	justify-content: center;
+	  	color: black;
+	  	font-size: 25px;
+	  }
+img{
+		border-radius: 30%;
+		position: fixed;
+		top: 200px;
+		right: 0px;
+		left: 750px;
+}

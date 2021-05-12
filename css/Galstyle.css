@@ -1,0 +1,179 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Chango;
+}
+
+input{
+	display: none;
+}
+.PhoCon{
+	width: 100%;
+	text-align: center; 
+}
+
+h1{
+	font-weight: normal;
+	font-size: 50px;
+	position: relative;
+	margin: 40px 0;
+}
+
+@keyframes animate{
+	0%{
+		width: 100px;
+	}
+	50%{
+		width: 200px;
+	}
+	100%{
+		width: 100px;
+	}
+}
+.TopCon{
+	background-color: rgb(243, 243, 243);
+	width: 90%;
+	margin: 0 auto 20px auto;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	box-shadow: 3px 3px 5px lightgray;
+}
+h3{
+	height: 100%;
+	background-color: rgb(221, 221, 221);
+	line-height: 60px;
+	padding: 0 50px;
+	color: gray;
+}
+label{
+	display: inline-block;
+	height: 100%;
+	margin: 0 20px;
+	line-height: 60px;
+	font-size: 18px;
+	color: black;
+	cursor: pointer;
+	transition: color .5s; 
+}
+label:hover{
+	color: orange;
+}
+.PhoGal{
+	width: 90%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+}
+.P {
+	position: relative;
+	height: 230px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px orange;
+	cursor: pointer;
+	transition: .5s; 
+}
+.P img{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
+ 
+#cj1:checked ~ .PhoCon .PhoGal .P{
+	opacity: 1;
+	transform: scale(1);
+	position: relative;
+	transition: .5s; 
+}
+
+#cj2:checked ~ .PhoCon .PhoGal .Family{
+	transform: scale(1);
+	opacity: 1;
+	position: relative;
+	transition: .5s;
+}
+#cj2:checked ~ .PhoCon .PhoGal .Child,
+#cj2:checked ~ .PhoCon .PhoGal .Friends{
+	opacity: 0;
+	transform: scale(0);
+	position: absolute;
+	transition: .5s;
+}
+#cj3:checked ~ .PhoCon .PhoGal .Child{
+	transform: scale(1);
+	opacity: 1;
+	position: relative;
+	transition: .5s;
+}
+#cj3:checked ~ .PhoCon .PhoGal .Family,
+#cj3:checked ~ .PhoCon .PhoGal .Friends{
+	opacity: 0;
+	transform: scale(0);
+	position: absolute;
+	transition: .5s;
+}
+#cj4:checked ~ .PhoCon .PhoGal .Friends{
+	transform: scale(1);
+	opacity: 1;
+	position: relative;
+	transition: .5s;
+}
+#cj4:checked ~ .PhoCon .PhoGal .Family,
+#cj4:checked ~ .PhoCon .PhoGal .Child{
+	opacity: 0;
+	transform: scale(0);
+	position: absolute;
+	transition: .5s;
+}
+
+.nav{
+	width: 100px;
+	height: auto;
+	top: 0%;
+	left: 0%;
+}
+.nav a{
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Chango;
+	font-weight: bold;
+	height: 100px;
+	margin: 10px 0;
+	float: left;
+	display: inline-block;
+	background-color: white;
+	color: black;
+	line-height: 50px;
+	text-align: center; 
+	transition: 300ms; 
+	border-radius: 30px;
+}
+
+a.active, .nav a:hover{
+	background-color: #C0C0C0;
+	color: black;
+	width: 150%;
+
+}
+.a{
+	width: 120%;
+}
+.b{
+	width: 120%;
+}
+.c{
+	width: 120%;
+}
+.d{
+	width: 120%;
+}
+.e{
+	width: 120%;
+}
+.f{
+	width: 160%;
+
+}
